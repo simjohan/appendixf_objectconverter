@@ -24,8 +24,8 @@ import java.util.ArrayList;
  */
 public class Convert {
     
-    private int object;
-    private String values;
+    private final int object;
+    private final String values;
     private int caret = 0;
     
     public Convert(int object, String values) {
@@ -35,7 +35,7 @@ public class Convert {
     
     public String getStringResult() {
         String result = "";
-        
+        //2721821.1.1.1;6001;
         
         ArrayList<Item> items = ObjectValues.initObj37();
         
@@ -45,7 +45,11 @@ public class Convert {
         
         for(Item i: items) {
             try {
-                String key = values.substring(caret, caret+i.getSize());
+                System.out.println("Caret: " +caret);
+                int endIndex = caret+i.getSize();
+                
+                
+                String key = values.substring(caret, endIndex);
                 caret += i.getSize();
 
                 System.out.println(i.getTitle() + ": " + i.getValueForKey(key));

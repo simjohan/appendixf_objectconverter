@@ -73,6 +73,18 @@ public class ObjectValues {
         item6.put("2", "No");
         items.add(new Item("Header/Footer", item6, 1));
         
+        HashMap item8 = new HashMap();
+        item8.put("{var}", "IP adress");
+        items.add(new Item("ECR IP Address", item8, 1));
+        
+        HashMap item7 = new HashMap();
+        item7.put("{var}", "Separator");
+        items.add(new Item("Separator", item7, 1));
+        
+        HashMap item9 = new HashMap();
+        item9.put("{var}", "Port");
+        items.add(new Item("ECR Port number", item9, 1));
+        
         return items;
     }
     

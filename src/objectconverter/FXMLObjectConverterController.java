@@ -21,8 +21,6 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -56,7 +54,8 @@ public class FXMLObjectConverterController implements Initializable {
         textArea.setText("Converts raw objectdata to readable parameters / info."
                 + "\nEnter the object-nr found in steps in object and it's data into the values field."
                 + "\nMake sure there is no leading/trailing spaces in the data."
-                + "\n\nCurrently supported objects are 35(ECR parameters) and 37(Function parameters).");
+                + "\n\nCurrently supported objects are 35(ECR parameters) and 37(Function parameters)."
+                + "\nSource: https://github.com/simjohan/appendixf_objectconverter.git");
     }    
     
 }
