@@ -50,7 +50,6 @@ public class FXMLObjectConverterController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
         textArea.setText("Converts raw objectdata to readable parameters / info."
                 + "\nEnter the object-nr found in steps in object and it's data into the values field."
                 + "\nMake sure there is no leading/trailing spaces in the data."

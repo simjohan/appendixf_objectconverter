@@ -20,6 +20,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -33,7 +34,11 @@ public class ObjectConverter extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
 
         Scene scene = new Scene(root);
+        
+       // stage.getIcons().add(new Image(("/logo_32.png")));
+        stage.getIcons().add(new Image(ObjectConverter.class.getResourceAsStream( "nets_64.png" ))); 
         stage.setTitle("Viking Object Converter");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }

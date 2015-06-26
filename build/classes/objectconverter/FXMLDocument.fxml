@@ -9,8 +9,7 @@
 <?import javafx.scene.text.*?>
 
 <GridPane fx:controller="objectconverter.FXMLObjectConverterController" 
-    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <stylesheets><URL value="@style.css" /></stylesheets>
+    xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="10" vgap="10" prefHeight="500"  >
     
     <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
     
@@ -20,7 +19,7 @@
     <Label text="Values:" GridPane.columnIndex="2" GridPane.rowIndex="0"  />
     <TextField fx:id="valuesText" GridPane.columnIndex="3" GridPane.rowIndex="0"  />
     
-    <TextArea fx:id="textArea" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="4" editable="false"  />
+    <TextArea fx:id="textArea" GridPane.columnIndex="0" GridPane.rowIndex="1" prefHeight="500"  GridPane.columnSpan="4" editable="false"  />
     
     <Button fx:id="convertButton" GridPane.columnIndex="0" GridPane.rowIndex="2" text="Convert" onAction="#handleConvertButtonAction"  />
     <Button fx:id="clearButton" GridPane.columnIndex="1" GridPane.rowIndex="2" text="Clear" onAction="#handleClearButtonAction"  />
